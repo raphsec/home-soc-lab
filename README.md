@@ -17,11 +17,10 @@ real network attacks as a Blue Team analyst.
 
 ## 🌐 Lab Architecture
 
-...
-[Kali Linux 192.168.56.101] ––attacks––> [Ubuntu 192.168.56.102]
-Attacker                                    Defender
-...
-
+```
+[Kali Linux 192.168.56.101] ---attacks---> [Ubuntu 192.168.56.102]
+        Attacker                                 Defender
+```
 
 ## 📋 Phases
 
@@ -53,11 +52,12 @@ Attacker                                    Defender
 | 80/tcp | open | HTTP | Apache httpd 2.4.58 |
 
 ## 🚨 Snort Custom Rules
-...
-alert icmp any any -> any any (msg:“ICMP Ping Detected”; sid:1000001; rev:1;)
-alert tcp any any -> $HOME_NET any (msg:“Port Scan Detected”; flags:S; sid:1000002; rev:1;)
-alert tcp any any -> $HOME_NET 22 (msg:“SSH Connection Attempt”; sid:1000003; rev:1;)
-...
+
+```
+alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:1000001; rev:1;)
+alert tcp any any -> $HOME_NET any (msg:"Port Scan Detected"; flags:S; sid:1000002; rev:1;)
+alert tcp any any -> $HOME_NET 22 (msg:"SSH Connection Attempt"; sid:1000003; rev:1;)
+```
 
 
 ## 🚨 Attacks Detected
