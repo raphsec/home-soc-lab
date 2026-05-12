@@ -83,4 +83,15 @@ alert tcp any any -> $HOME_NET 22 (msg:“SSH Connection Attempt”; sid:1000003
 - Real SOC analyst tools and workflows
 
 ## 📸 Screenshots
-See screenshots folder for full documentation of each phase.
+
+### Phase 1 — Lab Setup
+![VirtualBox Setup](screenshots/screenshot-1-virtualbox-setup.p...jpeg)
+
+### Phase 2 — Network Discovery
+![Nmap Scan](screenshots/screenshot-3-nmap-scan.tiff)
+![Aggressive Scan](screenshots/screenshot-4-aggressive-nmap-scan.tiff)
+![Wireshark Capture](screenshots/screenshot-7-wireshark-capture.png.jpeg)
+
+### Phase 3 — Snort IDS
+![Snort Rules](screenshots/screenshot-9-snort-rules.png.jpeg)
+![Snort Alerts](screenshots/screenshot-11-snort-alerts.png.jpeg)
