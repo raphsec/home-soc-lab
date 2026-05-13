@@ -20,8 +20,7 @@ Built a home Security Operations Center (SOC) lab using VirtualBox, Kali Linux a
 ## 🌐 Lab Architecture
 
 [Kali Linux 192.168.56.101] ---attacks---> [Ubuntu 192.168.56.102]
-        Attacker                                 Defender
-        
+        Attacker                                 Defender##
 
 ## 📋 Phases
 
@@ -55,7 +54,7 @@ Built a home Security Operations Center (SOC) lab using VirtualBox, Kali Linux a
 ## 🚨 Snort Custom Rules
 alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:1000001; rev:1;)
 alert tcp any any -> $HOME_NET any (msg:"Port Scan Detected"; flags:S; sid:1000002; rev:1;)
-alert tcp any any -> $HOME_NET 22 (msg:"SSH Connection Attempt"; sid:1000003; rev:1;)
+alert tcp any any -> $HOME_NET 22 (msg:"SSH Connection Attempt"; sid:1000003; rev:1;)##
 
 ## 🚨 Attacks Detected
 | Attack | Rule Triggered | Result |
