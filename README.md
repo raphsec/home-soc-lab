@@ -1,4 +1,7 @@
 # 🛡️ Home SOC Lab — Network Security Monitoring
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![Tools](https://img.shields.io/badge/Tools-Nmap%20%7C%20Wireshark%20%7C%20Snort-blue)
+![Platform](https://img.shields.io/badge/Platform-Linux-orange)
 
 ## 📌 Project Overview
 Built a home Security Operations Center (SOC) lab using 
@@ -59,7 +62,6 @@ alert tcp any any -> $HOME_NET any (msg:"Port Scan Detected"; flags:S; sid:10000
 alert tcp any any -> $HOME_NET 22 (msg:"SSH Connection Attempt"; sid:1000003; rev:1;)
 ```
 
-
 ## 🚨 Attacks Detected
 | Attack | Rule Triggered | Result |
 |--------|---------------|--------|
@@ -85,13 +87,12 @@ alert tcp any any -> $HOME_NET 22 (msg:"SSH Connection Attempt"; sid:1000003; re
 ## 📸 Screenshots
 
 ### Phase 1 — Lab Setup
-![VirtualBox Setup](screenshots/screenshot-1-virtualbox-setup.p...jpeg)
+![VirtualBox Setup](screenshots/screenshot-1-virtualbox-setup.png.jpeg)
+![Ping Test](screenshots/screenshot-2-ping-test.jpeg)
 
 ### Phase 2 — Network Discovery
 ![Nmap Scan](screenshots/screenshot-3-nmap-scan.tiff)
-![Aggressive Scan](screenshots/screenshot-4-aggressive-nmap-scan.tiff)
-![Wireshark Capture](screenshots/screenshot-7-wireshark-capture.png.jpeg)
+![Wireshark](screenshots/screenshot-7-wireshark-capture.png.jpeg)
 
 ### Phase 3 — Snort IDS
-![Snort Rules](screenshots/screenshot-9-snort-rules.png.jpeg)
 ![Snort Alerts](screenshots/screenshot-11-snort-alerts.png.jpeg)
