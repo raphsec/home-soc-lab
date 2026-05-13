@@ -18,6 +18,7 @@ Built a home Security Operations Center (SOC) lab using VirtualBox, Kali Linux a
 | Snort IDS | Intrusion detection & alerting |
 
 ## 🌐 Lab Architecture
+
 [Kali Linux 192.168.56.101] ---attacks---> [Ubuntu 192.168.56.102]
         Attacker                                 Defender
         
