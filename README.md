@@ -22,8 +22,6 @@ Built a home Security Operations Center (SOC) lab using VirtualBox, Kali Linux a
 [Kali Linux 192.168.56.101] ---attacks---> [Ubuntu 192.168.56.102]
         Attacker                                 Defender
 
-## 📋 Phases
-
 ### Phase 1 — Lab Setup
 - Installed VirtualBox on Windows host
 - Configured Kali Linux and Ubuntu VMs
