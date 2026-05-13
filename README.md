@@ -29,7 +29,7 @@ Built a home Security Operations Center (SOC) lab using VirtualBox, Kali Linux a
 - Set both VMs to Host-Only network adapter
 - Verified connectivity via ping test
 - Confirmed IPs: Kali (192.168.56.101) Ubuntu (192.168.56.102)
-
+  
 ### Phase 2 — Network Discovery
 - Ran Nmap service scan: `nmap -sV 192.168.56.102`
 - Ran aggressive scan: `nmap -A 192.168.56.102`
