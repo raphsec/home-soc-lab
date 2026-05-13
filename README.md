@@ -1,12 +1,11 @@
 # 🛡️ Home SOC Lab — Network Security Monitoring
+
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![Tools](https://img.shields.io/badge/Tools-Nmap%20%7C%20Wireshark%20%7C%20Snort-blue)
 ![Platform](https://img.shields.io/badge/Platform-Linux-orange)
 
 ## 📌 Project Overview
-Built a home Security Operations Center (SOC) lab using 
-VirtualBox, Kali Linux and Ubuntu to simulate and detect 
-real network attacks as a Blue Team analyst.
+Built a home Security Operations Center (SOC) lab using VirtualBox, Kali Linux and Ubuntu to simulate and detect real network attacks as a Blue Team analyst.
 
 ## 🛠️ Tools Used
 | Tool | Purpose |
@@ -19,11 +18,6 @@ real network attacks as a Blue Team analyst.
 | Snort IDS | Intrusion detection & alerting |
 
 ## 🌐 Lab Architecture
-
-```
-[Kali Linux 192.168.56.101] ---attacks---> [Ubuntu 192.168.56.102]
-        Attacker                                 Defender
-```
 
 ## 📋 Phases
 
@@ -56,11 +50,6 @@ real network attacks as a Blue Team analyst.
 
 ## 🚨 Snort Custom Rules
 
-```
-alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:1000001; rev:1;)
-alert tcp any any -> $HOME_NET any (msg:"Port Scan Detected"; flags:S; sid:1000002; rev:1;)
-alert tcp any any -> $HOME_NET 22 (msg:"SSH Connection Attempt"; sid:1000003; rev:1;)
-```
 
 ## 🚨 Attacks Detected
 | Attack | Rule Triggered | Result |
@@ -92,7 +81,12 @@ alert tcp any any -> $HOME_NET 22 (msg:"SSH Connection Attempt"; sid:1000003; re
 
 ### Phase 2 — Network Discovery
 ![Nmap Scan](screenshots/screenshot-3-nmap-scan.tiff)
-![Wireshark](screenshots/screenshot-7-wireshark-capture.png.jpeg)
+![Aggressive Scan](screenshots/screenshot-4-aggressive-nmap-scan.tiff)
+![Wireshark Capture](screenshots/screenshot-7-wireshark-capture.png.jpeg)
+![Wireshark Filtered](screenshots/screenshot-8-wireshark-filtered.png..jpeg)
 
 ### Phase 3 — Snort IDS
+![Snort Rules](screenshots/screenshot-9-snort-rules.png..jpeg)
+![Snort Validation](screenshots/screenshot-10-Snort-validation.png..jpeg)
 ![Snort Alerts](screenshots/screenshot-11-snort-alerts.png.jpeg)
+![Alert Log](screenshots/screenshot-12-alert-log.png.jpeg)
